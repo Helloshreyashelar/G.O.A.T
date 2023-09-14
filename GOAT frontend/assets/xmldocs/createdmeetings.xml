@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meetings>
+<meeting>
+              <id>meeting-1694101061944</id>
+              <name>Animesh</name>
+              <seatingCapacity>5</seatingCapacity>
+              <amenities>, , </amenities>
+</meeting>
+<meeting>
+              <id>meeting-1694101324245</id>
+              <name>Jitesh</name>
+              <seatingCapacity>20</seatingCapacity>
+              <amenities>, , </amenities>
+</meeting>
+<meeting>
+              <id>meeting-1694101063532</id>
+              <name>Animesh</name>
+              <seatingCapacity>5</seatingCapacity>
+              <amenities>, , </amenities>
+</meeting>
+<meeting>
+              <id>meeting-1694109220944</id>
+              <name>Danu</name>
+              <seatingCapacity>11</seatingCapacity>
+              <amenities>, , </amenities>
+</meeting>
+<meeting>
+              <id>meeting-1694124261944</id>
+              <name>Sahib</name>
+              <seatingCapacity>20</seatingCapacity>
+              <amenities>, , </amenities>
+</meeting>
+</meetings>

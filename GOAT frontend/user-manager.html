@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>G.O.A.T. Homepage</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+      
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <!-- Template Main CSS File -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      </head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">test123@goat.com</a></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="aboutus.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>G.O.A.T<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="admin.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="user-manager.html">Manage Users</a></li>
+              <li><a href="organize-meeting.html">Organize Meeting</a></li>
+              <li><a href="room-availability.html">View Meeting Rooms</a></li>
+              <li><a href="create-meetings.html">Create Meeting</a></li>
+              <li><a href="edit-meetings.html">Edit Booked Meetings</a></li>
+              <li><a href="userdata.html">View User List</a></li>
+            </ul>
+          <li class="dropdown"><a href="#"><span>Sign Out</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="login.html">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  
+
+        <div class="section-header">
+          <h2>Welcome Admin</h2>
+        </div>
+
+        <div class="d-flex flex-row justify-content-evenly">
+            <div class="room-management">
+                <h4>Room Management</h4>
+                <form id="addRoomForm">
+                    <input type="text" id="roomName" placeholder="Room Name" required>
+                    <button type="button" class="btn" id="btnb" onclick="addRoom()">Add Room</button>
+                </form>
+                <table>
+                  <ul id="roomList">
+                      <!-- List of rooms will be displayed here -->
+                      
+                  </ul>
+                </table>
+            </div>
+
+            
+
+            <div class="user-management">
+                <h4>User Management</h4>
+                <form id="addUserForm">
+                    <input type="text" id="userName" placeholder="User Name" required>
+                    <button type="button" class="btn" id="btnb"  onclick="addUser()">Add User</button>
+                </form>
+                <ol id="userList">
+                    <!-- List of users will be displayed here -->
+                </ol>
+            </div>
+
+            <div class="manager-management">
+                <h4>Manager Management</h4>
+                <form id="addmanagerForm">
+                    <input type="text" id="managerName" placeholder="manager Name" required>
+                    <button type="button" class="btn" id="btnb"  onclick="addManager()">Add manager</button>
+                </form>
+                <ol id="managerList">
+                    <!-- List of managers will be displayed here -->
+                </ol>
+            </div>
+        </div>
+    
+           
+       
+
+  </div>
+</section><!-- End Portfolio Section -->
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-info">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span>G.O.A.T.</span>
+        </a>
+        <p>Let's schedule!</p>
+        <div class="social-links d-flex mt-4">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="admin.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="organize-meeting.html">Organize Meeting</a></li>
+          <li><a href="room-availability.html">View Meeting Rooms</a></li>
+          <li><a href="create-meetings.html">Create Meeting</a></li>
+          <li><a href="edit-meetings.html">Edit Booked Meetings</a></li>
+          <li><a href="userdata.html">View User List</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          <strong>Phone:</strong> +91 1800 180 000<br>
+          <strong>Email:</strong> test123@goat.com<br>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>G.O.A.T.</span></strong> All Rights Reserved
+    </div>
+  </div>
+
+</footer>
+<!-- End Footer -->
+    <script src="/assets/js/adminjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>G.O.A.T. Homepage</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">test123@goat.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 1800 180 0000</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>G.O.A.T<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="manager.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li><a href="organize-meeting.html">Organize Meeting</a></li>
+            <li><a href="room-availability.html">View Meeting Rooms</a></li>
+            <li><a href="create-meetings.html">Create Meeting</a></li>
+            <li><a href="edit-meetings.html">Edit Booked Meetings</a></li>
+            <li><a href="userdata.html">View User List</a></li>
+          </ul>
+          <li class="dropdown"><a href="#"><span>Sign Out</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="login.html">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <section>
+    <div class="container mt-5">
+        <h2>Organize Meeting</h2>
+        <form id="meetingForm">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="meetingDate">Meeting Date:</label>
+                <input type="date" class="form-control" id="meetingDate" required>
+            </div>
+            <div class="form-group">
+                <label for="startTime">Start Time:</label>
+                <input type="time" class="form-control" id="startTime" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration (in hours):</label>
+                <input type="number" class="form-control" id="duration" required>
+            </div>
+            <div class="form-group">
+                <label for="meetingType">Meeting Type:</label>
+                <select class="form-control" id="meetingType" required>
+                    <option value="type1">Classroom Training</option>
+                    <option value="type2">Online Training</option>
+                    <option value="type2">Conference call</option>
+                    <option value="type2">Business</option>
+                    <option value="type2">Whiteboard and Projector</option>
+                    <option value="type2">Wifi and projector</option>
+                    <option value="type2">Conference call facility</option>
+                    <option value="type2">projector</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="members">Add Members:</label>
+                <!-- Implement a UI to search and add members here -->
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                <input type="text" class="form-control" name="email" placeholder="Email" required>
+                <button type="button" class="btn" id="btnb" onclick="addMember()">Add Member</button>
+            </div>
+  
+            <div class="form-group">
+                <label for="meetingRoom">Select Meeting Room:</label>
+                <select id="meetingRoom" class="form-control">
+                  <!-- Options will be added here dynamically with JavaScript -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="managerCredits">Manager Credits:</label>
+                <input type="number" class="form-control" id="managerCredits" required>
+            </div> 
+            
+             
+            <button type="button" class="btn" id="btnb" onclick="validateAndSaveMeeting()">Save</button>
+            <button type="button" class="btn btn-secondary" onclick="cancelMeeting()">Cancel</button>
+        </form>
+    </div>
+
+   
+    <script>
+        function addMember() {
+                
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+            };
+            xhttp.open("GET", "members.xml", true);
+            xhttp.send();
+
+            function myFunction(xml) {
+                var xmlDoc = xml.responseXML;
+                var name = xmlDoc.getElementsByName("name");
+                var email = xmlDoc.getElementsByName("email");
+                name.insertData(name,email);
+            }
+        }
+
+      const roomsData = [
+        { id: 1, name: "Room A" },
+        { id: 2, name: "Room B" },
+        { id: 3, name: "Room C" },
+        { id: 4, name: "Room D" },
+      ];
+
+      // Function to populate the dropdown with room options
+        function populateRoomDropdown() {
+            const meetingRoomDropdown = document.getElementById("meetingRoom");
+
+            roomsData.forEach((room) => {
+                const option = document.createElement("option");
+                option.value = room.id; // You can set the value to room id if needed
+                option.text = room.name;
+                meetingRoomDropdown.appendChild(option);
+            });
+        }
+
+        // Call the function to populate the dropdown on page load
+        window.addEventListener("load", populateRoomDropdown);
+
+
+        function validateAndSaveMeeting() {
+
+            // Implement validation logic and save meeting function here
+            const title = document.getElementById('title').value;
+            const meetingDate = document.getElementById('meetingDate').value;
+            const startTime = document.getElementById('startTime').value;
+            const duration = parseFloat(document.getElementById('duration').value);
+            const meetingType = document.getElementById('meetingType').value;
+            const managerCredits = parseFloat(document.getElementById('managerCredits').value);
+
+            // Validate title
+            if (!title) {
+                alert('Title is required.');
+                return;
+            }
+
+            // Validate meeting date and time
+            const currentDate = new Date();
+            const selectedDate = new Date(`${meetingDate}T${startTime}`);
+            if (selectedDate <= currentDate) {
+                alert('Meeting date and time should be in the future.');
+                return;
+            }
+
+            // Validate duration
+            if (isNaN(duration) || duration <= 0) {
+                alert('Duration should be a positive number.');
+                return;
+            }
+
+            // Validate manager credits
+            if (isNaN(managerCredits) || managerCredits <= 0) {
+                alert('Manager credits should be a positive number.');
+                return;
+            }
+
+            // Add your additional validations here based on business rules
+
+            // If all validations pass, you can proceed to save the meeting
+            saveMeeting();
+        }
+
+        function saveMeeting() {
+            const title = document.getElementById('title').value;
+            const meetingDate = document.getElementById('meetingDate').value;
+            const startTime = document.getElementById('startTime').value;
+            const duration = parseFloat(document.getElementById('duration').value);
+            const meetingType = document.getElementById('meetingType').value;
+            const managerCredits = parseFloat(document.getElementById('managerCredits').value);
+
+            // Prepare the meeting data
+            const meetingData = {
+                title: title,
+                meetingDate: meetingDate,
+                startTime: startTime,
+                duration: duration,
+                meetingType: meetingType,
+                managerCredits: managerCredits
+            };
+
+            // Simulate sending the meeting data to the server (replace with actual server code)
+            fetch('/saveMeeting', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(meetingData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the server response here (e.g., show a success message)
+                alert('Meeting saved successfully! Meeting ID: ' + data.meetingId);
+                // You can also reset the form or navigate to another page if needed
+            })
+            .catch(error => {
+                // Handle errors (e.g., display an error message)
+                console.error('Error:', error);
+            });
+        }
+
+
+        function cancelMeeting() {
+            // Implement cancel meeting function here
+            document.getElementById('meetingForm').reset();
+        }
+    </script>
+  </section>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>G.O.A.T.</span>
+          </a>
+          <p>Let's schedule!</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="organize-meeting.html">Organize Meeting</a></li>
+            <li><a href="room-availability.html">View Meeting Rooms</a></li>
+            <li><a href="create-meetings.html">Create Meeting</a></li>
+            <li><a href="edit-meetings.html">Edit Booked Meetings</a></li>
+            <li><a href="userdata.html">View User List</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Phone:</strong> +91 1800 180 000<br>
+            <strong>Email:</strong> test123@goat.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>G.O.A.T.</span></strong> All Rights Reserved
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Bootstrap Prompt Modal -->
+<div class="modal fade" id="bootstrapPromptModal" tabindex="-1" role="dialog" aria-labelledby="bootstrapPromptModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bootstrapPromptModalLabel">Prompt Title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="bootstrapPromptMessage">Prompt message goes here.</p>
+        <input type="text" class="form-control" id="bootstrapPromptInput" style="display: none;">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="bootstrapPromptSubmit">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

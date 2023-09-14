@@ -1,0 +1,42 @@
+/* login.css */
+
+body {
+    background-image: url('/assets/img/background.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card-header {
+    background-color: #00796b !important; /* Dark green background color with !important */
+    color: #fff !important; /* White text color with !important */
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .btn {
+    background-color: #00796b; /* Dark green background color for the button */
+    color: #fff !important; /* White text color with !important */
+    font-size: 18px;
+  }
+  
+  .form-label {
+    font-size: 18px;
+  }
+  
+  .card-footer {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  

@@ -1,0 +1,62 @@
+<users>
+    <user>
+        <Name>Dog Water</Name>
+        <Email>dog@water.com</Email>
+        <Phone>1234567890</Phone>
+        <Role>Admin</Role>
+    </user>
+    <user>
+        <Name>Cat Fur</Name>
+        <Email>cat@fur.com</Email>
+        <Phone>1234562190</Phone>
+        <Role>Manager</Role>
+    </user>
+    <user>
+        <Name>Himanshu Rai</Name>
+        <Email>himanshu.rai@example.com</Email>
+        <Phone>9821746110</Phone>
+        <Role>Manager</Role>
+    </user>
+    <user>
+        <Name>Kai Cenat</Name>
+        <Email>guccidrip124@example.com</Email>
+        <Phone>9999999990</Phone>
+        <Role>Member</Role>
+    </user>
+    <user>
+        <Name>John Doe</Name>
+        <Email>john.doe@example.com</Email>
+        <Phone>1234567890</Phone>
+        <Role>Member</Role>
+    </user>
+    <user>
+        <Name>Hard Worker</Name>
+        <Email>veryhardworker@example.com</Email>
+        <Phone>1234562190</Phone>
+        <Role>Member</Role>
+    </user>
+    <user>
+        <Name>Caffeine King</Name>
+        <Email>caff123@example.com</Email>
+        <Phone>9994567890</Phone>
+        <Role>Member</Role>
+    </user>
+    <user>
+        <Name>Peanut Brain</Name>
+        <Email>ilikepeanuts@example.com</Email>
+        <Phone>1235557890</Phone>
+        <Role>Member</Role>
+    </user>
+    <user>
+        <Name>Mark Nadeshot</Name>
+        <Email>thieves100@example.com</Email>
+        <Phone>100999999</Phone>
+        <Role>Member</Role>
+    </user>
+    <user>
+        <Name>Elon Musk</Name>
+        <Email>tesla.spacex@example.com</Email>
+        <Phone>1034556910</Phone>
+        <Role>Member</Role>
+    </user>
+</users>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meetings>
+    <meeting>
+        <id>M1631312325356</id>
+        <name>Animesh</name>
+        <seatingCapacity>10</seatingCapacity>
+        <hours>2</hours>
+        <amenities>
+            <amenity>
+                <aname>Projector</aname>
+                <costPerHour>5</costPerHour>
+            </amenity>
+            <amenity>
+                <aname>Wi-Fi Connection</aname>
+                <costPerHour>10</costPerHour>
+            </amenity>
+        </amenities>
+    </meeting>
+    <meeting>
+        <id>M1631398765421</id>
+        <name>Jitesh</name>
+        <seatingCapacity>7</seatingCapacity>
+        <hours>3</hours>
+        <amenities>
+            <amenity>
+                <aname>Projector</aname>
+                <costPerHour>5</costPerHour>
+            </amenity>
+            <amenity>
+                <aname>Conference Call Facility</aname>
+                <costPerHour>15</costPerHour>
+            </amenity>
+            <amenity>
+                <aname>Whiteboard</aname>
+                <costPerHour>5</costPerHour>
+            </amenity>
+            <amenity>
+                <aname>TV</aname>
+                <costPerHour>10</costPerHour>
+            </amenity>
+            <amenity>
+                <aname>Water Dispenser</aname>
+                <costPerHour>5</costPerHour>
+            </amenity>
+            <amenity>
+                <aname>Coffee Machine</aname>
+                <costPerHour>10</costPerHour>
+            </amenity>
+        </amenities>
+    </meeting>
+    <meeting>
+        <id>M1631398764431</id>
+        <name>Rahul</name>
+        <seatingCapacity>25</seatingCapacity>
+        <hours>4</hours>
+        <amenities>
+            <amenity>
+                <aname>Projector</aname>
+                <costPerHour>5</costPerHour>
+            </amenity>
+            <amenity>
+                <aname>Conference Call Facility</aname>
+                <costPerHour>15</costPerHour>
+            </amenity>
+            <amenity>
+                <aname>Whiteboard</aname>
+                <costPerHour>5</costPerHour>
+            </amenity>
+        </amenities>
+    </meeting>
+</meetings>

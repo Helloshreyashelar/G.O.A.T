@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <userId>admin123</userId>
+        <email>admin@example.com</email>
+        <userType>admin</userType>
+    </user>
+    <user>
+        <userId>manager456</userId>
+        <email>manager@example.com</email>
+        <userType>manager</userType>
+    </user>
+    <user>
+        <userId>member789</userId>
+        <email>member@example.com</email>
+        <userType>member</userType>
+    </user>
+</users>    
